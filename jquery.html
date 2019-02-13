@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pacharanut</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">PROFILE</a>
+            <a href="table.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">TABLE</a>
+            <a href="list.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">LIST</a>
+            <a href="jquery.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">JQUERY</a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">TABLE</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">LIST</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">PROFILE</a>
+        </div>
+    </div>
+    <div class="jumbotron text-center">
+        <h1>MY JQUERY</h1>
+        <p>PACHARANUT</p>
+    </div>
+    <div class="container">
+        <script>
+            $(document).ready(()=> {
+                $("#flip").click( ()=> {
+                    $("#panel").slideDown("slow");
+                });
+            });
+        </script>
+
+
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">Hello world!</div>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <script>
+            $(document).ready(() => {
+                $("#btn1").click(() => {
+                    $("#test1").text("PACHARANUT");
+                });
+                $("#btn2").click(() => {
+                    $("#test2").html("<b>YAMBAN</b>");
+                });
+                $("#btn3").click(() => {
+                    $("#test3").val("5735512040");
+                });
+            });
+        </script>
+
+        <p id="test1">My name is.</p>
+        <p id="test2">My lastname is.</p>
+
+        <p>Input field: <input type="text" id="test3" value="Id"></p>
+
+        <button id="btn1">Set Text</button>
+        <button id="btn2">Set HTML</button>
+        <button id="btn3">Set Value</button>
+
+    </div>
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+</html>
+
+</body>
+<footer class="jumbotron">
+    <p>PACHARANUT YAMBAN 5735512040</p>
+</footer>
+
+
+</html>
